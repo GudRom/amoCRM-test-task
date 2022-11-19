@@ -1,0 +1,225 @@
+.footer {
+  margin-top: 124px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__list-left-block {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 10px 0 0;
+}
+
+.footer__list-left-block-item:first-child {
+  margin-right: 98px;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__menu_end {
+  align-items: flex-end;
+}
+
+.footer__lists-block {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__lists-block_end {
+  align-items: flex-end;
+  text-align: end;
+}
+
+.footer__lists-block-item {
+  margin: 0 52px 0 0;
+}
+
+.footer__lists-block-item:last-child {
+  margin: 0;
+}
+
+.footer__menu-title {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.21;
+  letter-spacing: 0.05em;
+  margin: 0 0 1.429em;
+  text-transform: uppercase;
+  color: #656566;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__menu-list-item {
+  margin-bottom: 10px;
+}
+
+.footer__menu-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.footer__menu-link {
+  display: block;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1875;
+  color: #e4e5ea;
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__social-list-item {
+  margin-left: 12px;
+}
+
+.footer__social-list-item:first-child {
+  margin-left: 0;
+}
+
+.footer__social {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer__social_tg {
+  background-image: url(../images/telegram.png);
+}
+
+.footer__social_vb {
+  background-image: url(../images/viber.png);
+}
+
+.footer__social_wa {
+  background-image: url(../images/whatsapp.png);
+}
+
+.footer__rights-policy-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  text-align: right;
+  margin: 33px 0 20px;
+}
+
+.footer__rights {
+  margin: 0 0 5px 0;
+}
+
+.footer__policy {
+  text-decoration-line: underline;
+  color: #e4e5ea;
+}
+
+/* Adaptive */
+
+@media screen and (max-width: 1180px) {
+  .footer {
+    margin: 57px 20px 0;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .footer__list {
+    flex-direction: column;
+  }
+
+  .footer__menu_end {
+    align-items: flex-start;
+  }
+
+  .footer__lists-block_end {
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .footer__rights-policy-block {
+    align-items: flex-start;
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin: 40px 16px 0;
+  }
+
+  .footer__menu {
+    margin-bottom: 30px;
+  }
+
+  .footer__rights-policy-block {
+    margin-top: 20px;
+  }
+
+  .footer__list-left-block {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer__menu-title {
+    font-size: 0.75rem;
+    line-height: 1.25;
+    margin-bottom: 20px;
+  }
+
+  .footer__menu-link {
+    font-size: 0.875rem;
+    line-height: 1.21;
+  }
+
+  .footer__menu-link_font-size {
+    font-size: 1rem;
+    line-height: 1.1875;
+  }
+
+  .footer__lists-block-item {
+    margin-right: 40px;
+  }
+
+  .footer__rights-policy-block {
+    margin-bottom: 60px;
+  }
+
+  .footer__social {
+    width: 24px;
+    height: 24px;
+  }
+}

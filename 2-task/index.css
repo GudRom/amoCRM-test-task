@@ -1,0 +1,29 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Montserrat:wght@300;400&display=swap');
+
+/* Styles */
+@import url(./vendor/normalize.css);
+@import url(./blocks/header.css);
+@import url(./blocks/main.css);
+@import url(./blocks/footer.css);
+
+:root {
+  font-size: 16px;
+  --gradient-color: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%);
+}
+
+.page {
+  background-color: #0e1014;
+  color: #e4e5ea;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+@media (any-hover: hover) {
+  a:hover, button:hover {
+    cursor: pointer;
+    opacity: .8;
+  }
+}
